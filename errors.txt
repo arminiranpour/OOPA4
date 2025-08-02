@@ -1,20 +1,7 @@
-In file included from CustomerOrder.cpp:7:
-CustomerOrder.h:44:14: error: extra qualification ‘seneca::CustomerOrder::’ on member ‘requiresItem’ [-fpermissive]
-   44 |         bool CustomerOrder::requiresItem(const std::string& itemName) const;
-      |              ^~~~~~~~~~~~~
-In file included from Workstation.h:7,
-                 from Workstation.cpp:4:
-CustomerOrder.h:44:14: error: extra qualification ‘seneca::CustomerOrder::’ on member ‘requiresItem’ [-fpermissive]
-   44 |         bool CustomerOrder::requiresItem(const std::string& itemName) const;
-      |              ^~~~~~~~~~~~~
-In file included from Workstation.h:7,
-                 from LineManager.h:7,
-                 from LineManager.cpp:6:
-CustomerOrder.h:44:14: error: extra qualification ‘seneca::CustomerOrder::’ on member ‘requiresItem’ [-fpermissive]
-   44 |         bool CustomerOrder::requiresItem(const std::string& itemName) const;
-      |              ^~~~~~~~~~~~~
-In file included from Workstation.h:7,
-                 from tester_3_prof.cpp:11:
-CustomerOrder.h:44:14: error: extra qualification ‘seneca::CustomerOrder::’ on member ‘requiresItem’ [-fpermissive]
-   44 |         bool CustomerOrder::requiresItem(const std::string& itemName) const;
-      |              ^~~~~~~~~~~~~
+Station.cpp: In constructor ‘seneca::Station::Station(const std::string&)’:
+Station.cpp:25:9: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+   25 |         if (m_itemName == "Bookcase" && m_serialNumber >= 987000)
+      |         ^~
+Station.cpp:26:42: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   26 |             m_serialNumber = 987;        m_quantity = std::stoul(util.extractToken(record, next_pos, more));
+      |                                          ^~~~~~~~~~
