@@ -98,11 +98,12 @@ namespace seneca {
                     station.updateQuantity();
                     os << "    Filled " << m_name << ", " << m_product
                        << " [" << m_lstItem[i]->m_itemName << "]" << std::endl;
+                    break; 
                 } else {
                     os << "    Unable to fill " << m_name << ", " << m_product
                        << " [" << m_lstItem[i]->m_itemName << "]" << std::endl;
                 }
-                break; // only one item per station per call
+                
             }
         }
     }
