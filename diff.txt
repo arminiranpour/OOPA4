@@ -1,0 +1,14 @@
+In line number 157 of your output:
+The output should be:
+    Unable to fill Rania A., 2-Room Home Office and Bedroom [Desk]
+    ^
+But your output is: 
+    Filled Hong H., 1-Room Office [Office Chair]
+    ^
+
+Unmatched character details:
+The character in column 5 is supposed to be:
+  [U] ASCII code(85)
+but you printed
+  [F] ASCII code(70)
+
