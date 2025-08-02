@@ -21,7 +21,7 @@ namespace seneca {
         m_serialNumber = std::stoul(util.extractToken(record, next_pos, more));
         m_quantity = std::stoul(util.extractToken(record, next_pos, more));
         m_description = util.extractToken(record, next_pos, more);
-
+//hi
 
     }
 
